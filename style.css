@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #ffe1e1, #ffb7d5);
+  color: #4a0b2d;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  background: #fff0f5;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.letter p {
+  margin: 15px 0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+}
+
+button {
+  display: block;
+  margin: 30px auto 10px auto;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e91e63;
+  transform: scale(1.05);
+}
+
+#popup {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e91e63;
+  background: #ffeef5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.hearts::before {
+  content: "💗💖💕💞💓";
+  font-size: 80px;
+  position: fixed;
+  animation: floatHearts 20s linear infinite;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+@keyframes floatHearts {
+  0% { top: 100%; }
+  100% { top: -100%; }
+}
